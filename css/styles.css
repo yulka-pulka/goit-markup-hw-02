@@ -6,6 +6,7 @@
   --primary-bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
   --black-color: #000;
+  --border-color: #eee;
 }
 
 body {
@@ -35,6 +36,10 @@ body {
 
 .header-studio {
   color: var(--black-color);
+}
+
+.footer-studio {
+  color: var(--white-color);
 }
 
 .header-link {
@@ -89,7 +94,7 @@ body {
   color: var(--white-color);
 }
 
-.button {
+.hero-button {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -100,16 +105,8 @@ body {
   letter-spacing: 0.06em;
   border: 0;
   border-radius: 4px;
-}
-
-.button.primary {
   color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-.button.secondary {
-  color: var(--accent-color);
-  background-color: var(--white-color);
 }
 
 /* ----------------------------Advantages----------------------------- */
@@ -198,10 +195,6 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-.footer-studio {
-  color: var(--white-color);
-}
-
 .address {
   font-style: normal;
 }
@@ -216,4 +209,55 @@ body {
 .map:hover,
 .map:focus {
   color: var(--accent-color);
+}
+
+/* ----------------------------Portfolio----------------------------- */
+
+.filter-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 0;
+  border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.filter-button.current {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.gallery-item {
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+}
+
+.gallery-img {
+  width: 370px;
+  height: 294px;
+}
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.gallery-scope {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
